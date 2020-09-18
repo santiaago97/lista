@@ -1,0 +1,218 @@
+body{
+  background-color: rgb(35,47,69);
+}
+select, button:hover{
+  cursor: pointer;
+  outline: none;
+}
+input[type='range'] {
+  -webkit-appearance: none;
+  background-color: rgb(220,226,237);
+  border-radius: 10px;
+  outline-style: none;
+}
+
+input[type='range']::-webkit-slider-runnable-track {
+  height: 10px;
+  -webkit-appearance: none;
+  color: rgb(230,34,84);
+  margin-top: -1px;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  width: 20px;
+  -webkit-appearance: none;
+  height: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  background: rgb(202,23,69);
+  margin-top: -4px;
+}
+.fixed{
+  bottom:0;
+  position:  fixed;
+  z-index: 999;
+}
+.filtros{
+  display: block;
+  color: #fff;
+  font-size: 16px;
+  height: 100%;
+  background-color: rgb(35,47,69);
+  padding-top: 10px;
+}
+.iddExata{
+  margin-bottom: 10px;
+}
+.fxEtaria{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.erro{
+  color: rgb(249,15,75);
+  font-weight: bold;
+}
+.sobrepor{
+  margin-left: -25px;
+  color:rgb(81,87,93);
+}
+.bodyLista{
+  background-color: #f4f4ff;
+}
+.lista{
+  height: 100%;
+  background-color: #f4f4ff;
+  overflow: auto;
+}
+.notFind{
+  margin: 10px;
+  padding:15px;
+  border-radius: 20px;
+  background-color: #ff7777;
+  text-align: center;
+  max-height: 90px;
+}
+.margens{
+  margin: 1px 10px 10px 10px;
+  padding-top: 15px; 
+  padding-bottom: 5px;
+}
+.male{
+  background-color: rgb(220,226,237);
+  border-bottom: 3px solid #f4f4ff;
+}
+.male:hover{
+  background-color: rgb(194,204,224);
+  cursor: pointer;
+}
+.female{
+  background-color: rgb(250,210,220);
+  border-bottom: 3px solid #f4f4ff;
+}
+.female:hover{
+  background-color: rgb(246,175,193);
+  cursor: pointer;
+}
+.paginacaoEnd{
+  height: 50px;
+  overflow: hidden;
+  background-color: rgb(48, 65, 95);
+  transition: height 0.2s;
+  right:0;
+}
+.fundoPreto{
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 0px;
+  overflow: auto;
+  transition: height 0.7s;
+  top: 0;
+  right: 0;
+}
+.fundoPreto > .row > .col-md-12{
+  border-radius: 30px;
+}
+.lista > .row{
+  padding: 20px;
+}
+.cap{
+  text-transform:capitalize;
+} 
+.espaco{
+  margin-top:10px;
+}
+.btnMob{
+  display : none;
+}
+.flutuante{
+  display: none;
+}
+.hide{
+  display: none;
+}
+.active{
+  display: block;
+}
+.rosa{
+  background-color: rgb(230,34,84);
+  border-color: rgb(220,25,75);
+  color: #fff;
+  border-radius: 25px;
+}
+.rosa:hover{
+  background-color: rgb(129,222,205);
+  border-color: rgb(98,214,193);
+  color: rgb(35,47,69);
+}
+.rosa:active{
+  background-color: rgb(202,23,69) !important;
+  outline: none !important;
+  border:0;
+}
+.rosa:focus{
+  box-shadow: 0 0 0 0 !important;
+}
+.azul{
+  background-color: rgb(48, 65, 95);
+  border-color: rgb(38,52,76);
+  color: #fff;
+  border-radius: 25px;
+}
+.azul:hover{
+  background-color: rgb(129,222,205);
+  border-color: rgb(98,214,193);
+  color: rgb(35,47,69);
+}
+.azul:active{
+  background-color: rgb(202,23,69) !important;
+  outline: none !important;
+  border:0;
+}
+.azul:focus{
+  box-shadow: 0 0 0 0 !important;
+}
+@media screen and (max-width: 767px) {
+  .cap{
+    text-transform:capitalize;
+  } 
+  .form-control, .custom-select{
+    height: 50px;
+    font-size: 25px;
+  }
+  .row{
+    font-size: 22px;
+  }
+  .filtros{
+    color: #fff;
+    font-size:14px;
+    display: none;
+    z-index: 999;
+  }
+  .btn-success{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .btn-danger{
+    margin-bottom: 20px
+  }
+  .flutuante{
+    bottom:10px;
+    position:  fixed;
+    z-index: 1;
+    transition: bottom 0.2s;
+    display: block;
+  }
+  .paginacaoEnd{
+    height: 0px;
+    background-color: rgb(48, 65, 95);
+    transition: height 0.2s;
+    left: 0;
+    border-radius: 15px;
+    z-index: 1;
+  }
+  .espacoMob{
+    margin-top: 0px;
+  }
+  .btnMob{
+    display : block;
+  }
